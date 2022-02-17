@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
 using Prueba1.Models;
+
 
 namespace Prueba1.Data
 {

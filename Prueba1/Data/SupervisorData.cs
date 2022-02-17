@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
 using Prueba1.Models;
+
 
 namespace Prueba1.Data
 {
@@ -20,7 +21,7 @@ namespace Prueba1.Data
                 Supervisor oSupervisor = new Supervisor();
                 SqlCommand cmd = new SqlCommand("sp_RegistrarSupervisor", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nombre", supervisor.nombre);
+                cmd.Parameters.AddWithValue("@nombre", oSupervisor.nombre);
                 cmd.Parameters.AddWithValue("@apellido", oSupervisor.apellido);
                 cmd.Parameters.AddWithValue("@dni", oSupervisor.dni);
                 cmd.Parameters.AddWithValue("@sexo",oSupervisor.sexo);
